@@ -20,14 +20,14 @@ const assertArraysEqual = function(actual, expected) {
 
 const middle = function(array) {
   let middleArr = [];
+  const middleIndex = Math.floor(array.length / 2);
 
   if (array.length >= 4 && array.length % 2 === 0) {
-    middleArr.push(array[array.length / 2 - 1], array[array.length - array.length / 2]);
-    return middleArr;
+    middleArr.push(array[middleIndex - 1], array[middleIndex - middleIndex / 2]);
   }
 
   if (array.length >= 3 && array.length % 2 !== 0) {
-    middleArr.push(array[Math.floor(array.length / 2)]);
+    middleArr.push(array[middleIndex]);
   }
   return middleArr;
 };
