@@ -29,16 +29,18 @@ const takeUntil = function(array, callback) {
   return results;
 };
 
-const data1 = [1, 2, 3, -4, 5, 6, 7];
-const results1 = takeUntil(data1, x => x < 0);
-console.log(results1);
+module.exports = takeUntil;
 
-console.log('---');
+// const data1 = [1, 2, 3, -4, 5, 6, 7];
+// const results1 = takeUntil(data1, x => x < 0);
+// console.log(results1);
 
-const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
-const results2 = takeUntil(data2, x => x === ',');
-console.log(results2);
+// console.log('---');
 
-// assertArraysEqual(takeUntil(), []);
-assertArraysEqual(takeUntil(data1, x => x < 0), [1, 2, 3]);
-assertArraysEqual(takeUntil(data2, x => x === ','), ["I've", "been", "to", "Hollywood"]);
+// const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+// const results2 = takeUntil(data2, x => x === ',');
+// console.log(results2);
+
+// // assertArraysEqual(takeUntil(), []);
+// assertArraysEqual(takeUntil(data1, x => x < 0), [1, 2, 3]);
+// assertArraysEqual(takeUntil(data2, x => x === ','), ["I've", "been", "to", "Hollywood"]);
