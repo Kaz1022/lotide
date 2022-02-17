@@ -1,3 +1,6 @@
+//Checking to see if arrayOne and arrayTwo is the same.
+// If it's the same, return true, if not return false.
+
 const eqArrays = function(arrayOne, arrayTwo) {
   if (arrayOne.length !== arrayTwo.length) {
     return false;

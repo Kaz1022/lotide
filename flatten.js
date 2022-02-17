@@ -1,3 +1,5 @@
+// It takes in an array containing elements including nested arrays of elements, and return a "flattened" version of the array.
+
 const flatten = function(array) {
   let finalArr = [];
  
